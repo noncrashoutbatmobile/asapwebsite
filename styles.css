@@ -1,4 +1,7 @@
 .carousel {
-    color : #f067f0;
-    background-color: black;
+    color : #e021e0;
+    text-shadow: black 2px 2px 2px;
+}
+.pinktext {
+    color: #f067f0;
 }
