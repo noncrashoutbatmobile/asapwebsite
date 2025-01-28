@@ -1,7 +1,49 @@
 .carousel {
-    color : #e021e0;
+    color: #e021e0;
     text-shadow: black 2px 2px 2px;
 }
+
+body {
+    background-color: black;
+    color: white;
+    padding-top: 70px; /* Add padding to ensure content below the navbar is visible */
+}
+
+.pink-divider {
+    height: 10px;
+    background-color: pink;
+    margin: 20px 0;
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.img-fluid {
+    height: 400px; /* Set the height to the desired value */
+    object-fit: cover; /* This will make the image cover the div */
+}
+
+.img-custom {
+    object-fit: contain; /* Ensures images maintain their aspect ratio */
+}
+
 .pinktext {
     color: #f067f0;
+}
+
+.navbar {
+    background-color: black; /* Set the navbar background color to black */
+}
+
+.navbar .nav-link, .navbar .navbar-brand {
+    color: pink; /* Set the navbar text color to pink */
+}
+
+.navbar .nav-link:hover, .navbar .navbar-brand:hover {
+    color: white; /* Set the hover color to white */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='pink' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
