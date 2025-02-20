@@ -19,16 +19,51 @@ body {
     margin-bottom: 20px;
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minmax value to make images larger */
+    gap: 20px;
+    grid-auto-flow: dense; /* Fill in gaps with smaller items */
+}
+
 .img-fluid {
-    height: 400px; /* Set the height to the desired value */
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: 100%; /* Maintain the aspect ratio */
     object-fit: cover; /* This will make the image cover the div */
+}
+
+.img-tall {
+    grid-row: span 2; /* Span two rows for tall images */
+}
+
+.img-small {
+    grid-row: span 1; /* Span one row for small images */
+}
+
+.img-shift-left {
+    object-position: left !important; /* Shift the image to the left */
+}
+
+.img-shift-right {
+    object-position: right !important; /* Shift the image to the right */
+}
+
+.img-shift-center {
+    object-position: center !important; /* Center the image */
 }
 
 .img-custom {
     object-fit: contain; /* Ensures images maintain their aspect ratio */
 }
 
-.pinktext {
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
+    }
+}
+
+p, h1, h2, h3, h4, h5, h6 {
     color: #f067f0;
 }
 
@@ -37,7 +72,7 @@ body {
 }
 
 .navbar .nav-link, .navbar .navbar-brand {
-    color: pink; /* Set the navbar text color to pink */
+    color: #f067f0; /* Set the navbar text color to pink */
 }
 
 .navbar .nav-link:hover, .navbar .navbar-brand:hover {
@@ -45,5 +80,20 @@ body {
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='pink' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f067f0' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Add styles for pink buttons */
+.btn-pink {
+    background-color: #f067f0;
+    color: white;
+    border: none;
+}
+
+.btn-pink:hover {
+    background-color: #e021e0;
+    color: white;
+}
+.social {
+    text-decoration: none;
 }
