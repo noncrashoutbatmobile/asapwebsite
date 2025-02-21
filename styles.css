@@ -44,6 +44,41 @@ body {
     color: white;
     padding-top: 70px; /* Add padding to ensure content below the navbar is visible */
     font-family: var(--paragraph-font);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.iframe-container {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    overflow: auto;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 1230.83px; /* Set height to match the iframe content */
+    border: none;
+    background: transparent;
+}
+
+footer {
+    flex-shrink: 0;
 }
 
 .pink-divider {
@@ -65,7 +100,7 @@ body {
 
 .img-fluid {
     width: 100%; /* Ensure the image takes up the full width of its container */
-    height: 100%; /* Maintain the aspect ratio */
+    height: auto;
     object-fit: cover; /* This will make the image cover the div */
 }
 
@@ -91,6 +126,15 @@ body {
 
 .img-custom {
     object-fit: contain; /* Ensures images maintain their aspect ratio */
+}
+
+.hover-effect {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px #f067f0; /* Add pink glow effect */
 }
 
 /* Media queries for responsiveness */
