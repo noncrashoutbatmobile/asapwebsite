@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
-    
 </head>
 <body>
   <header>
@@ -32,26 +31,28 @@
         </div>
       </nav>
   </header>
+
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="carousel-caption d-none d-md-block top-caption">
-        <h1 style="font-size: 5em; text-decoration: underline;">WE ARE A$AP FTC</h1>
+      <div class="carousel-caption top-caption">
+        <h1 class="display-1 text-decoration-underline">WE ARE A$AP FTC</h1>
       </div>
-      <img src="images/IMG_0315.webp" class="d-block w-100 first-image" alt="First slide" style="height: 830px; object-fit: cover; object-position: top;"></div>
+      <img src="images/image.000002(2).webp" class="d-block w-100 first-image" alt="First slide" style="height: 100vh; object-fit: cover; object-position: top;">
+    </div>
     <div class="carousel-item">
-      <img src="images/IMG_0228.webp" class="d-block w-100" alt="Second slide" style="height: 830px; object-fit: cover;">
-      <div class="carousel-caption d-none d-md-block bottom-caption">
+      <img src="images/IMG_0228.webp" class="d-block w-100" alt="Second slide" style="height: 100vh; object-fit: cover;">
+      <div class="carousel-caption bottom-caption">
         <h2>Check Out Our Gallery</h2>
         <a href="gallery.html" class="btn btn-pink btn-primary" target="_blank" style="transform: scale(1.2);">Gallery</a>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/donate.webp" class="d-block w-100" alt="Third slide" style="height: 830px; object-fit: cover;">
-      <div class="carousel-caption d-none d-md-block top-caption">
+      <img src="images/donate.webp" class="d-block w-100" alt="Third slide" style="height: 100vh; object-fit: cover;">
+      <div class="carousel-caption top-caption">
         <h2>PLEASE CONSIDER DONATING</h2>
       </div>
-      <div class="carousel-caption d-none d-md-block bottom-caption">
+      <div class="carousel-caption bottom-caption">
         <h4>Your contributions make all the difference</h4>
         <a href="donate.html" class="btn btn-pink btn-primary" target="_blank" style="transform: scale(1.2);">Donate</a>
       </div>
@@ -69,8 +70,43 @@
 
 <style>
   .top-caption {
-  top: 0;
-  bottom: auto;
+    top: 0;
+    bottom: auto;
+  }
+  .bottom-caption {
+    bottom: 0;
+    top: auto;
+  }
+  .carousel-caption h1, .carousel-caption h2, .carousel-caption h4 {
+    font-size: 2em;
+  }
+  @media (min-width: 768px) {
+    .carousel-caption h1 {
+      font-size: 5em;
+    }
+    .carousel-caption h2 {
+      font-size: 3em;
+    }
+    .carousel-caption h4 {
+      font-size: 2em;
+    }
+  }
+  @media (max-width: 767px) {
+    .carousel-caption {
+      bottom: 20px;
+    }
+    .carousel-caption h1, .carousel-caption h2, .carousel-caption h4 {
+      font-size: 1.5em;
+    }
+    .carousel-caption h1 {
+      font-size: 2.5em;
+    }
+    .carousel-caption h2 {
+      font-size: 2em;
+    }
+    .carousel-caption h4 {
+      font-size: 1.5em;
+    }
   }
 </style>
 
@@ -80,8 +116,10 @@
   <p>We are a FIRST Tech Challenge team based in South Jordan, Utah. We are a group of high school students who are passionate about STEM and robotics. <br>
   <em style="font-size: 1.2em;">We are committed to proving ourselves as a rookie team by developing consistent robotics systems.</em> Based in Salt Lake City, Utah, we aim to revolutionize the world of robotics competitions.<br>
   </p><p>For more information about the team, please visit our <a href="aboutus.html">About Us</a> page.</p>
+</div>
+
 <!-- Add footer -->
-<footer class="bg-dark text-white text-center py-2 w-100"></footer>
+<footer class="bg-dark text-white text-center py-2 w-100">
   <div class="container d-flex justify-content-between">
     <p class="text-start mb-0">&copy; 2025 A$AP FTC 26482. All rights reserved.</p>
     <div class="text-end">
@@ -90,10 +128,72 @@
         <a href="https://www.instagram.com/asapftc26482" class="text-white text-decoration-none" target="_blank">
           <img src="images/1725819461instagram-logo.png" alt="Instagram Logo" width="40" height="40" class="d-inline-block align-text-center"> @asapftc26482
         </a>
-      </p></a>
+      </p>
     </div>
   </div>
 </footer>
+<!-- Add this modal HTML at the end of the body -->
+<div class="modal fade" id="deviceWarningModal" tabindex="-1" aria-labelledby="deviceWarningModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deviceWarningModalLabel">Device Compatibility Warning</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>This site is not optimized for devices smaller than a typical iPad. Please consider switching to a larger device for the best experience.</p>
+        <p>You can continue, send the link to yourself via text or email, or exit the site.</p>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="phoneInput" class="form-label">Phone number</label>
+          <input type="tel" class="form-control" id="phoneInput" placeholder="123-456-7890">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue</button>
+        <button type="button" class="btn btn-primary" id="sendEmailButton">Send Email</button>
+        <button type="button" class="btn btn-primary" id="sendTextButton">Send Text</button>
+        <button type="button" class="btn btn-danger" id="exitButton">Exit</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Check if the device width is smaller than a typical iPad (768px)
+    if (window.innerWidth < 768 && !sessionStorage.getItem('deviceWarningShown')) {
+      var deviceWarningModal = new bootstrap.Modal(document.getElementById('deviceWarningModal'));
+      deviceWarningModal.show();
+      sessionStorage.setItem('deviceWarningShown', 'true');
+    }
+
+    // Handle the send email button click
+    document.getElementById('sendEmailButton').addEventListener('click', function() {
+      var email = document.getElementById('emailInput').value;
+      if (email) {
+        window.location.href = 'mailto:' + email + '?subject=Check%20out%20this%20website&body=Here%20is%20the%20link%20to%20the%20website:%20' + window.location.href;
+      }
+    });
+
+    // Handle the send text button click
+    document.getElementById('sendTextButton').addEventListener('click', function() {
+      var phone = document.getElementById('phoneInput').value;
+      if (phone) {
+        window.location.href = 'sms:' + phone + '?body=Check%20out%20this%20website:%20' + window.location.href;
+      }
+    });
+
+    // Handle the exit button click
+    document.getElementById('exitButton').addEventListener('click', function() {
+      window.close();
+    });
+  });
+</script>
+</body>
+</html>
 </body>
 </html>

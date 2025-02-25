@@ -48,5 +48,66 @@
   </div>
 </div>
 </footer>
+<!-- Add this modal HTML at the end of the body -->
+<div class="modal fade" id="deviceWarningModal" tabindex="-1" aria-labelledby="deviceWarningModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deviceWarningModalLabel">Device Compatibility Warning</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>This site is not optimized for devices smaller than a typical iPad. Please consider switching to a larger device for the best experience.</p>
+        <p>You can continue, send the link to yourself via text or email, or exit the site.</p>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="phoneInput" class="form-label">Phone number</label>
+          <input type="tel" class="form-control" id="phoneInput" placeholder="123-456-7890">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue</button>
+        <button type="button" class="btn btn-primary" id="sendEmailButton">Send Email</button>
+        <button type="button" class="btn btn-primary" id="sendTextButton">Send Text</button>
+        <button type="button" class="btn btn-danger" id="exitButton">Exit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Check if the device width is smaller than a typical iPad (768px)
+    if (window.innerWidth < 768 && !sessionStorage.getItem('deviceWarningShown')) {
+      var deviceWarningModal = new bootstrap.Modal(document.getElementById('deviceWarningModal'));
+      deviceWarningModal.show();
+      sessionStorage.setItem('deviceWarningShown', 'true');
+    }
+
+    // Handle the send email button click
+    document.getElementById('sendEmailButton').addEventListener('click', function() {
+      var email = document.getElementById('emailInput').value;
+      if (email) {
+        window.location.href = 'mailto:' + email + '?subject=Check%20out%20this%20website&body=Here%20is%20the%20link%20to%20the%20website:%20' + window.location.href;
+      }
+    });
+
+    // Handle the send text button click
+    document.getElementById('sendTextButton').addEventListener('click', function() {
+      var phone = document.getElementById('phoneInput').value;
+      if (phone) {
+        window.location.href = 'sms:' + phone + '?body=Check%20out%20this%20website:%20' + window.location.href;
+      }
+    });
+
+    // Handle the exit button click
+    document.getElementById('exitButton').addEventListener('click', function() {
+      window.close();
+    });
+  });
+</script>
 </body>
 </html>
