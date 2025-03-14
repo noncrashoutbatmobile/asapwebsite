@@ -82,9 +82,11 @@ footer {
 }
 
 .pink-divider {
+    width: 95% !important; /* Forces width to 95% */
     height: 10px;
     background-color: #f080f0;
     margin: 20px 0;
+    margin: auto; /* Centers it */
 }
 
 .image-container {
@@ -225,3 +227,8 @@ p, h1, h2, h3, h4, h5, h6 {
     grid-column: span 1;
     grid-row: span 2;
 }
+.custom-width {
+    width: 95% !important;  /* Forces width to 95% */
+    margin: auto;           /* Centers it */
+  }
+  
