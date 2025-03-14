@@ -213,3 +213,15 @@ p, h1, h2, h3, h4, h5, h6 {
 .col-span-2 {
     grid-column: span 2;
 }
+
+.sponsor-image {
+    margin: 10px;
+}
+.img-standard {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.img-wide {
+    grid-column: span 1;
+    grid-row: span 2;
+}
