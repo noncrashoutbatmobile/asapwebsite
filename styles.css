@@ -3,7 +3,7 @@
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #000000;
-    --secondary-color: #f067f0;
+    --secondary-color: #f080f0;
     --accent1-color: #f491f4;
     --accent2-color: white;
 
@@ -12,12 +12,12 @@
     --paragraph-font: "Kanit", Helvetica, sans-serif;
 
     /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #f067f0;  /* headlines on a white background */
-    --headline-color-on-color: #f067f0; /* headlines on a colored background */
-    --paragraph-color-on-white: #f067f0; /* paragraph text on a white background */
-    --paragraph-color-on-color: #f067f0; /* paragraph text on a colored background */
+    --headline-color-on-white:#f080f0;  /* headlines on a white background */
+    --headline-color-on-color:#f080f0; /* headlines on a colored background */
+    --paragraph-color-on-white: #f080f0; /* paragraph text on a white background */
+    --paragraph-color-on-color: #f080f0; /* paragraph text on a colored background */
     --paragraph-background-color: #000000;
-    --nav-link-color: #f067f0;
+    --nav-link-color: #f080f0;
     --nav-background-color: #000000;
     --nav-hover-link-color: #000000;
     --nav-hover-background-color: #f491f4;
@@ -83,7 +83,7 @@ footer {
 
 .pink-divider {
     height: 10px;
-    background-color: #f067f0;
+    background-color: #f080f0;
     margin: 20px 0;
 }
 
@@ -134,7 +134,7 @@ footer {
 
 .hover-effect:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px 5px #f067f0; /* Add pink glow effect */
+    box-shadow: 0 0 15px 5px #f080f0; /* Add pink glow effect */
 }
 
 /* Media queries for responsiveness */
@@ -145,7 +145,7 @@ footer {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-    color: #f067f0;
+    color: #f080f0;
     font-family: var(--heading-font);
 }
 
@@ -154,7 +154,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .nav-link, .navbar .navbar-brand {
-    color: #f067f0; /* Set the navbar text color to pink */
+    color: #f080f0; /* Set the navbar text color to pink */
 }
 
 .navbar .nav-link:hover, .navbar .navbar-brand:hover {
@@ -167,7 +167,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Add styles for pink buttons */
 .btn-pink {
-    background-color: #f067f0;
+    background-color: #f080f0;
     color: white;
     border: none;
 }
@@ -179,4 +179,37 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .social {
     text-decoration: none;
+}
+.sponsor-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.sponsor-item h5 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.img-fluid {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.img-fluid:hover {
+    transform: scale(1.1);
+}
+.img-tall {
+    height: 100%;
+    width: auto;
+}
+.img-small {
+    width: 100%;
+    height: auto;
+}
+.col-span-2 {
+    grid-column: span 2;
 }
