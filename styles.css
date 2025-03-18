@@ -22,7 +22,9 @@
     --nav-hover-link-color: #000000;
     --nav-hover-background-color: #f491f4;
 }
-
+.pinktext {
+    color: #f080f0;
+}
 .carousel {
     color: #e021e0;
     text-shadow: black 2px 2px 2px;
