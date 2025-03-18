@@ -8,7 +8,7 @@ Fonts are separated by a | */
   --primary-color: #000000  ;
   --secondary-color: #f067f0 ;
   --accent1-color: #f491f4;
-  --accent2-color: white;
+  --accent2-color: #333333;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Tomorrow", sans-serif;
