@@ -87,7 +87,7 @@ footer {
     width: 95% !important; /* Forces width to 95% */
     height: 10px;
     background-color: #f080f0;
-    margin: 20px 0;
+    margin: 20px;
     margin: auto; /* Centers it */
 }
 
