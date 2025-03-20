@@ -1,0 +1,6 @@
+# Ignore system files (these are typically ignored by default)
+.DS_Store
+Thumbs.db
+
+# Ignore awards.html
+awards.html
