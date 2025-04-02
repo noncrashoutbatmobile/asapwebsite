@@ -52,6 +52,14 @@
         object-fit: cover;
         object-position: center;
       }
+      #carouselExample {
+        margin-top: 0px; /* Adjust this value as needed */
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; /* Ensures it fills the viewport */
+      }
     </style>   
 </head>
 
@@ -80,7 +88,7 @@
   </header>
 <main>
 
-<div id="carouselExample" class="carousel slide d-flex align-items-center justify-content-center" data-bs-ride="carousel" style="margin-top: -15px; min-height: 100vh;">
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="carousel-caption top-caption">
