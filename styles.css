@@ -3,8 +3,8 @@
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #000000;
-    --secondary-color: #f080f0;
-    --accent1-color: #f491f4;
+    --secondary-color: #FACFD8; /* Updated darker pink */
+    --accent1-color: #FACFD8; /* Updated darker pink */
     --accent2-color: white;
 
     /* change the values below to your chosen font(s) */
@@ -12,21 +12,21 @@
     --paragraph-font: "Kanit", Helvetica, sans-serif;
 
     /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white:#f080f0;  /* headlines on a white background */
-    --headline-color-on-color:#f080f0; /* headlines on a colored background */
-    --paragraph-color-on-white: #f080f0; /* paragraph text on a white background */
-    --paragraph-color-on-color: #f080f0; /* paragraph text on a colored background */
+    --headline-color-on-white: #FACFD8;  /* headlines on a white background */
+    --headline-color-on-color: #FACFD8; /* headlines on a colored background */
+    --paragraph-color-on-white: #FACFD8; /* paragraph text on a white background */
+    --paragraph-color-on-color: #FACFD8; /* paragraph text on a colored background */
     --paragraph-background-color: #000000;
-    --nav-link-color: #f080f0;
+    --nav-link-color: #FACFD8;
     --nav-background-color: #000000;
     --nav-hover-link-color: #000000;
-    --nav-hover-background-color: #f491f4;
+    --nav-hover-background-color: #FACFD8;
 }
 .pinktext {
-    color: #f080f0;
+    color: #FACFD8; /* Updated darker pink */
 }
 .carousel {
-    color: #e021e0;
+    color: #FACFD8; /* Updated darker pink */
     text-shadow: black 2px 2px 2px;
 }
 
@@ -86,7 +86,7 @@ footer {
 .pink-divider {
     width: 95% !important; /* Forces width to 95% */
     height: 10px;
-    background-color: #f080f0;
+    background-color: #FACFD8; /* Updated darker pink */
     margin: 20px;
    
 }
@@ -138,7 +138,7 @@ footer {
 
 .hover-effect:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px 5px #f080f0; /* Add pink glow effect */
+    box-shadow: 0 0 15px 5px #FACFD8; /* Updated darker pink */
 }
 
 /* Media queries for responsiveness */
@@ -149,7 +149,7 @@ footer {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-    color: #f080f0;
+    color: #FACFD8;
     font-family: var(--heading-font);
 }
 
@@ -158,7 +158,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .nav-link, .navbar .navbar-brand {
-    color: #f080f0; /* Set the navbar text color to pink */
+    color: #FACFD8; /* Updated darker pink */
 }
 
 .navbar .nav-link:hover, .navbar .navbar-brand:hover {
@@ -166,18 +166,18 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f067f0' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FACFD8' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 /* Add styles for pink buttons */
 .btn-pink {
-    background-color: #f080f0;
+    background-color: #FACFD8; /* Updated darker pink */
     color: white;
     border: none;
 }
 
 .btn-pink:hover {
-    background-color: #e021e0;
+    background-color: #FACFD8; /* Updated darker pink */
     color: white;
 }
 
@@ -232,5 +232,4 @@ p, h1, h2, h3, h4, h5, h6 {
 .custom-width {
     width: 95% !important;  /* Forces width to 95% */
     margin: auto;           /* Centers it */
-  }
-  
+}

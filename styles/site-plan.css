@@ -173,3 +173,28 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+/* Ensure the modal content has a dark background */
+.modal-content {
+    background-color: #1a1a1a !important; /* Deep grey background with !important to override Bootstrap */
+    color: white !important; /* White text for contrast */
+    border: none; /* Remove border if desired */
+}
+
+/* Ensure the modal header and footer match the dark theme */
+.modal-header, .modal-footer {
+    border: none !important; /* Remove header and footer borders */
+    background-color: #1a1a1a !important; /* Match the modal content background */
+    color: white !important; /* Ensure text is readable */
+}
+
+/* Style the close button */
+.modal-header .btn-close {
+    filter: invert(1); /* Make the close button white */
+}
+
+/* Ensure the modal body matches the dark theme */
+.modal-body {
+    background-color: #1a1a1a !important; /* Ensure the body matches the modal content */
+    color: white !important; /* White text for readability */
+}
