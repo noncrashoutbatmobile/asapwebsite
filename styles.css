@@ -145,11 +145,11 @@ footer {
     box-shadow: 0 0 15px 5px #FACFD8; /* Updated darker pink */
 }
 
-/* Media queries for responsiveness */
+/* Media queries for responsiveness
 @media (max-width: 768px) {
     .image-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
-    }
+    /* }
     .img-fluid,
     .img-tall,
     .img-small {
@@ -158,7 +158,7 @@ footer {
         width: 100%;
         object-fit: cover;
     }
-}
+} */ 
 
 @media (max-width: 576px) {
     .image-grid {
