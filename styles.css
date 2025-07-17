@@ -146,6 +146,14 @@ footer {
     .image-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
     }
+    .img-fluid,
+    .img-tall,
+    .img-small {
+        max-height: 250px;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 p, h1, h2, h3, h4, h5, h6 {
