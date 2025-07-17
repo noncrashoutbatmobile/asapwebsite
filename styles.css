@@ -110,10 +110,14 @@ footer {
 
 .img-tall {
     grid-row: span 2; /* Span two rows for tall images */
+    height: 100%;
+    width: auto;
 }
 
 .img-small {
     grid-row: span 1; /* Span one row for small images */
+    width: 100%;
+    height: auto;
 }
 
 .img-shift-left {
@@ -163,14 +167,14 @@ footer {
         padding-right: 5vw;
         gap: 20px;
     }
+    .img-fluid,
     .img-tall,
-    .img-small,
-    .img-fluid {
-        grid-row: auto !important;
+    .img-small {
         width: 100% !important;
         height: auto !important;
         max-height: none !important;
         object-fit: contain !important;
+        grid-row: auto !important;
     }
 }
 
