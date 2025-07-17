@@ -172,7 +172,7 @@ footer {
     .img-small {
         width: 100% !important;
         height: auto !important;
-        object-fit: contain !important;
+        object-fit: cover !important;   /* <-- change from contain to cover */
         grid-row: auto !important;
     }
 }
