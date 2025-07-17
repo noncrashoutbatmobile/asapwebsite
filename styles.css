@@ -156,6 +156,24 @@ footer {
     }
 }
 
+@media (max-width: 576px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        gap: 20px;
+    }
+    .img-tall,
+    .img-small,
+    .img-fluid {
+        grid-row: auto !important;
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: contain !important;
+    }
+}
+
 p, h1, h2, h3, h4, h5, h6 {
     color: #FACFD8;
     font-family: var(--heading-font);
