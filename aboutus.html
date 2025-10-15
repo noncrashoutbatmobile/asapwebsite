@@ -41,7 +41,13 @@
   The FIRST Tech Challenge (FTC) is a global robotics competition that inspires students to innovate and excel in STEM fields. Our team builds robots to compete in these challenges, pushing the boundaries of robotics technology. <br><br>
   We couldn’t achieve our goals without the generosity of our sponsors and donors. Their support helps us push the boundaries of robotics technology and excel in FTC competitions. If you’d like to be part of our journey and support the future of robotics, please consider donating. Every contribution makes a significant difference.</h5>
 </section>
+
 <main class="container mt-5 pt-5">
+  <div class="pink-divider"></div>
+  <h2 class="text-center mt-5">Current Team Members</h2>
+  <h5 style="text-align: center; margin: 20px;">Meet the brilliant minds driving A$AP FTC 26482 forward. These innovators, builders, and problem-solvers bring passion, precision, and teamwork to every challenge. Together, they’re shaping the future of robotics — one bot at a time.</h5>
+
+
   <div class="row row-cols-1 row-cols-md-3 g-4 custom-width">
     <div class="col">
       <div class="card h-100">
@@ -83,7 +89,7 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <!-- <div class="col">
       <div class="card h-100">
         <img src="images/IMG_0322.webp" class="card-img-top" alt="Team Member 5">
         <div class="card-body text-center" style="background-color: #333;">
@@ -92,10 +98,10 @@
          <br><br>Class of 2026</p>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="col">
       <div class="card h-100">
-        <img src="images/IMG_0301.webp" class="card-img-top" alt="Team Member 6">
+        <img src="images/IMG_0301.webp" class="card-img-top" alt="Team Member 5">
         <div class="card-body text-center" style="background-color: #333;">
           <h5 class="card-title pinktext">Tharun Narendran</h5>
           <p class="card-text">Mechanical
@@ -106,6 +112,24 @@
   </div>
 
   <br>
+<br>
+<div class="pink-divider"></div>
+<h2 class="text-center mt-5">Team Alumni</h2>
+<h5 class="text-center" style="text-align: center; margin: 20px;">We’re proud to recognize those who helped shape our journey. Their contributions continue to inspire our team.</h5>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 custom-width">
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/IMG_0322.webp" class="card-img-top" alt="Former Member - Joshua Fullmer">
+      <div class="card-body text-center" style="background-color: #333;">
+        <h5 class="card-title pinktext">Joshua Fullmer</h5>
+        <p class="card-text">Mechanical, Web Development
+        <br><br>Class of 2026</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
 <br>
 <div class="pink-divider"></div>
 <h1 style="text-align: center;">Please Support Our Passion!</h1>
@@ -133,67 +157,6 @@
   </div>
 
 </footer>
-<!-- Add this modal HTML at the end of the body -->
-<div class="modal fade" id="deviceWarningModal" tabindex="-1" aria-labelledby="deviceWarningModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" style="background-color: #1a1a1a; color: white;">
-      <div class="modal-header" style="background-color: #1a1a1a; color: white;">
-        <h5 class="modal-title" id="deviceWarningModalLabel">Device Compatibility Warning</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1);"></button>
-      </div>
-      <div class="modal-body" style="background-color: #1a1a1a; color: white;">
-        <p>This site is not optimized for devices smaller than a typical iPad. Please consider switching to a larger device for the best experience.</p>
-        <p>You can continue, send the link to yourself via text or email, or exit the site.</p>
-        <div class="mb-3">
-          <label for="emailInput" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-          <label for="phoneInput" class="form-label">Phone number</label>
-          <input type="tel" class="form-control" id="phoneInput" placeholder="123-456-7890">
-        </div>
-      </div>
-      <div class="modal-footer" style="background-color: #1a1a1a; color: white;">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue</button>
-        <button type="button" class="btn btn-primary" id="sendEmailButton">Send Email</button>
-        <button type="button" class="btn btn-primary" id="sendTextButton">Send Text</button>
-        <button type="button" class="btn btn-danger" id="exitButton">Exit</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // Check if the device width is smaller than a typical iPad (768px)
-    if (window.innerWidth < 768 && !sessionStorage.getItem('deviceWarningShown')) {
-      var deviceWarningModal = new bootstrap.Modal(document.getElementById('deviceWarningModal'));
-      deviceWarningModal.show();
-      sessionStorage.setItem('deviceWarningShown', 'true');
-    }
-
-    // Handle the send email button click
-    document.getElementById('sendEmailButton').addEventListener('click', function() {
-      var email = document.getElementById('emailInput').value;
-      if (email) {
-        window.location.href = 'mailto:' + email + '?subject=Check%20out%20this%20website&body=Here%20is%20the%20link%20to%20the%20website:%20' + window.location.href;
-      }
-    });
-
-    // Handle the send text button click
-    document.getElementById('sendTextButton').addEventListener('click', function() {
-      var phone = document.getElementById('phoneInput').value;
-      if (phone) {
-        window.location.href = 'sms:' + phone + '?body=Check%20out%20this%20website:%20' + window.location.href;
-      }
-    });
-
-    // Handle the exit button click
-    document.getElementById('exitButton').addEventListener('click', function() {
-      window.close();
-    });
-  });
-</script>
 </body>
 </html>
 
